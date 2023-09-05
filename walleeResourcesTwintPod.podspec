@@ -15,4 +15,4 @@ Pod::Spec.new do |s|
   # s.ios.resource_bundle = { 'WalleeSDK' => 'WalleeSDK/WalleeSDK/Resources/**/*' }
   # s.private_header_files = 'WalleeSDK/WalleeSDK/Private/*.h'
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit'
+  # s.frameworks = 'UIKit'
