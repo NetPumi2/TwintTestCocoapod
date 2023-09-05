@@ -1,16 +1,18 @@
 Pod::Spec.new do |s|
-  s.name          = 'WalleeResourceTwintSDK'
-  s.version       = '1.0.0'
-  s.summary       = 'A short description of MyFramework'
-  s.homepage      = 'https://wallee.com'
-  s.license       = { :type => 'MIT' }
-  s.author        = { 'Lukas Salek' => 'lukas.salek@wallee.com' }
-  s.source        = { :http => 'https://github.com/NetPumi2/TwintTestCocoapod/raw/main/Wallee-resources-TwintSDK-7-0-0.zip' }
-  s.swift_version = '5.0'
-  s.ios.deployment_target = '12.4'
+  s.name             = 'WalleeTwintSDK'
+  s.version          = '1.0.4'
+  s.summary          = 'WalleeTwintSDK for iOS Apps implementing payment via Wallee payment service'
+  s.homepage         = 'https://wallee.com'
+  s.license          = { :type => 'Apache 2', :file => 'LICENSE' }
+  s.authors          = { 'CustomWeb' => 'info@customweb.com'}
+  
+  s.source           = { :git => 'https://github.com/NetPumi2/TwintTestCocoapod.git', :tag => "v"+s.version.to_s}
+  s.requires_arc                   = true
+  s.platform                       = :ios
+  s.ios.deployment_target = '8.0'
 
-  # s.dependency 'CropViewController', '~> 2.6.1'
-  # s.dependency 'Kingfisher', '~> 2.6.1'
-
-  s.vendored_frameworks = 'TwintSDK.xcframework'
-end
+  # s.source_files = 'WalleeSDK/WalleeSDK/**/*.{h,m}'
+  # s.ios.resource_bundle = { 'WalleeSDK' => 'WalleeSDK/WalleeSDK/Resources/**/*' }
+  # s.private_header_files = 'WalleeSDK/WalleeSDK/Private/*.h'
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit'
