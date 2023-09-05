@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'WalleeTwintSDK'
-  s.version          = '1.0.4'
+  s.version          = '1.0.0'
   s.summary          = 'WalleeTwintSDK for iOS Apps implementing payment via Wallee payment service'
   s.homepage         = 'https://wallee.com'
   s.license          = { :type => 'Apache 2', :file => 'LICENSE' }
