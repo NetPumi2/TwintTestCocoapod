@@ -6,14 +6,11 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'Apache 2', :file => 'LICENSE' }
   s.authors          = { 'CustomWeb' => 'info@customweb.com'}
   
-  s.source           = { :git => 'https://github.com/NetPumi2/TwintTestCocoapod.git', :tag => "v"+s.version.to_s}
+  s.source           = { :http => 'https://github.com/NetPumi2/TwintTestCocoapod/raw/main/Wallee-resources-TwintSDK-7-0-0.zip'}
   s.requires_arc                   = true
   s.platform                       = :ios
   s.ios.deployment_target = '8.0'
 
-  # s.source_files = 'WalleeSDK/WalleeSDK/**/*.{h,m}'
-  # s.ios.resource_bundle = { 'WalleeSDK' => 'WalleeSDK/WalleeSDK/Resources/**/*' }
-  # s.private_header_files = 'WalleeSDK/WalleeSDK/Private/*.h'
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit'
+  s.vendored_frameworks = 'TwintSDK.xcframework'
+
 end
