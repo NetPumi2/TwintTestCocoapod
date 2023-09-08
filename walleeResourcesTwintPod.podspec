@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.platform                       = :ios
   s.ios.deployment_target = '8.0'
 
-  s.vendored_frameworks = 'TwintSDK.xcframework'
+  s.vendored_frameworks = 'TwintSDK.xcframework', 'ThreeDS_SDK.xcframework'
 
 end
