@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'Apache 2', :file => 'LICENSE' }
   s.authors          = { 'CustomWeb' => 'info@customweb.com'}
   
-  s.source           = { :http => 'https://github.com/NetPumi2/TwintTestCocoapod/raw/main/WalleeSDKResources.zip'}
+  s.source           = { :http => 'https://github.com/NetPumi2/TwintTestCocoapod/raw/main/WalleeSDKResources/1.0.0/WalleeSDKResources.zip'}
   s.requires_arc                   = true
   s.platform                       = :ios
   s.ios.deployment_target = '8.0'
